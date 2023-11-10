@@ -1,0 +1,105 @@
+.dynamic{
+    /* border: 1px solid rgb(0, 255, 21); */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.dynamic-wrapper{
+    /* border: 1px solid yellow; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+h1{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+button{
+    padding: 0.4rem 2.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    color: hsl(230, 89%, 62%);
+}
+.user{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+    /* z-index: 10; */
+}
+.result{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 5;
+}
+.computer{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+    
+}
+#user-img{
+    /* border: 0.9rem solid hsl(230, 89%, 62%); */
+    padding: 2rem 2.3rem;
+    box-shadow: 1px 8px 2px hsl(230, 45%, 45%),inset -1px  8px 2px hsla(0, 1%, 45%, 0.466);
+    background: white;
+    border-radius: 50%;
+    min-width: 70%;
+    max-height: 200px;
+}
+#computer-img{
+    /* border: 0.9rem solid hsl(39, 89%, 49%); */
+    padding: 2rem 2.3rem;
+    /* box-shadow: 1px 8px 2px hsl(39, 71%, 29%),inset -1px  8px 2px hsla(0, 1%, 45%, 0.466); */
+    background: white;
+    border-radius: 50%;
+    min-width: 70%;
+    max-height: 200px;
+    z-index: 10;
+}
+.computer::before{
+    /* background: radial-gradient(circle ,hsl(237, 49%, 15%) ,hsl(214, 47%, 23%)); */
+    content: " ";
+    width: 50%;
+    top: 8%;
+    border-radius: 50%;
+    height: 100%;
+    /* border: 1px solid hsl(217, 16%, 45%); */
+    position: absolute;
+    filter: blur(1px);
+}
+.user::before{
+    /* background: radial-gradient(circle ,hsl(237, 49%, 15%) ,hsl(214, 47%, 23%)); */
+    content: " ";
+    width: 50%;
+    top: 8%;
+    border-radius: 50%;
+    height: 100%;
+    /* border: 1px solid hsl(217, 16%, 45%); */
+    position: absolute;
+    filter: blur(1px);
+}

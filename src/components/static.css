@@ -1,0 +1,57 @@
+.staticpage{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#triangle{
+    position: absolute;
+    width: 15%;
+}
+.icons{
+    /* border: 1px solid red; */
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+    row-gap: 1.5rem;
+    height: 80%;
+    position: relative;
+}
+.icons-wrapper-top{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    column-gap: 3.5rem;
+    align-items: center;
+}
+.icons-wrapper-top img{
+    background: white;
+    height: 100%;
+    border-radius: 50%;
+}
+.icons-wrapper-top img:nth-child(1){
+    border: 0.9rem solid hsl(230, 89%, 62%);
+    padding: 2rem 2.3rem;
+    box-shadow: 1px 8px 2px hsl(230, 45%, 45%),inset -1px  8px 2px hsla(0, 1%, 45%, 0.466);
+}
+.icons-wrapper-top img:nth-child(2){
+    border: 0.9rem solid hsl(349, 71%, 52%);
+    padding: 2rem 2.1rem;
+    box-shadow: 1px 8px 2px hsl(349, 65%, 39%),inset -1px  8px 2px hsla(0, 1%, 45%, 0.466);
+}
+.icons-wrapper-bottom{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons-wrapper-bottom img{
+    background: white;
+    padding: 2rem 2.4rem;
+    border-radius: 50%;
+    height: 100%;
+    border: 0.9rem solid hsl(39, 89%, 49%);
+    box-shadow: 1px 8px 2px hsl(39, 78%, 32%),inset -1px  8px 2px hsla(0, 1%, 45%, 0.466);
+}
